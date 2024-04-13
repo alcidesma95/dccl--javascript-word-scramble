@@ -1,7 +1,109 @@
-li{
+@font-face {
+  font-family: outfit;
+  src: url("assets/font/outfit.ttf");
+}
+
+:root {
+  --primary: var("");
+}
+
+body {
+  font-family: outfit;
+  width: 100dvh;
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+  background-image: url("/assets/bg-guess-the-word.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgb(3, 6, 22);
+  gap: 20px;
+  background: rgb(3, 6, 22);
+  background: rgb(3, 6, 22);
+  color: #4A5567;
+  background: linear-gradient(
+    125deg,
+    rgba(3, 6, 22, 1) 45%,
+    rgb(6, 8, 28) 100%
+  );
+  width: 80%;
+  max-width: 450px;
+}
+li {
   list-style: none;
 }
 
-ul{
+input {
+  all: unset;
+  width: 25px;
+  height: 25px;
+  border: solid 3px #4a5567;
+  border-radius: 15%;
+  padding: 5px;
+  color: #F2F5F9;
+}
+
+input:focus {
+  cursor: none;
+  border: solid 3px #672171;
+}
+
+ul {
   display: flex;
+}
+
+.word{
+  width: 80%;
+  background: #4A5567;
+  border-radius: 5%;
+  padding: 5px;
+  box-shadow: #000;
+  color: #97A3B6;
+ 
+}
+.word > ul {
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.tries{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #4A5567;
+}
+.marked{
+  background: #7429C6;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: col;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  border: none;
+  border-radius: 8px;
+  background: #C951E7;
+  width: 100px;
+  padding: 10px;
+  color: #F2F5F9;
+  font-weight: 700;
 }

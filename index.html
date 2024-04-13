@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guess The Word Game by AlcidesMa</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <img src="assets/Word Scramblle.svg" alt="">
-    <section>
-      <ul id="wordTable">
-        
-      </ul>
-    </section>
-    <section>
-      <div>tries (<span id="tries-board">4</span>/<span>5</span>)</div>
-      Mistake:<ul id="mistake-board"> </ul>
-    </section>
-    <section>
-      <input maxlength="1" type="text" name="" id="">
-      <input maxlength="1" type="text" name="" id="">
-      <input maxlength="1" type="text" name="" id="">
-      <input maxlength="1" type="text" name="" id="">
-      <input maxlength="1" type="text" name="" id="">
-      <input maxlength="1" type="text" name="" id="">
-    </section>
-    <section>
-      <button id="random-button">Random</button>
-      <button id="reset-button">Reset</button>
-    </section>
-  </main>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Word Game by AlcidesMa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img src="assets/Word Scramblle.svg" alt="" />
+      <section class="word">
+        <ul id="wordTable"></ul>
+      </section>
+      <section>
+        <div class="flex-col">
+          <div>tries (<span id="tries-board">4</span>/<span>5</span>)</div>
+          <div class="flex-col" >
+            <div class="tries marked"></div>
+            <div class="tries marked"></div>
+            <div class="tries marked"></div>
+            <div class="tries "></div>
+            <div class="tries "></div>
+          </div>
+        </div>
+        Mistake:
+        <ul id="mistake-board"></ul>
+      </section>
+      <section>
+        <input maxlength="1" type="text" name="" id="" />
+        <input maxlength="1" type="text" name="" id="" />
+        <input maxlength="1" type="text" name="" id="" />
+        <input maxlength="1" type="text" name="" id="" />
+        <input maxlength="1" type="text" name="" id="" />
+        <input maxlength="1" type="text" name="" id="" />
+      </section>
+      <section class="action">
+        <button class="btn" id="random-button">Random</button>
+        <button class="btn" id="reset-button">Reset</button>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
